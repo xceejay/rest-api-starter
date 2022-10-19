@@ -1,0 +1,16 @@
+ 
+[Unit]
+Description=Boiler Plate Service
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=root
+WorkingDirectory=here
+ExecStart=main
+
+[Install]
+WantedBy=multi-user.target
