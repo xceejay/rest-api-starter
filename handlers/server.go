@@ -60,20 +60,7 @@ func (server *Server) Run(addr string) {
 
 func (server *Server) initializeRoutes() {
 	server.Router.Post("/signin", server.signIn)
-	server.Router.Get("/users", server.getUsers)
-	
-	server.Router.Get("/searchbyimage2", server.searchByImage2)
-	server.Router.Post("/user", server.createUser)
 
-
-	server.Router.Get("/user/{username:[a-zA-z0-9]+}", server.getUser)
-	server.Router.Get("/user/{username:[a-zA-z0-9]+}/images", server.getAllUserImages)
-	server.Router.Get("/user/{username:[a-zA-z0-9]+}/listings", server.getAllUserListings)
-
-	server.Router.Get("/user/{username:[a-zA-z0-9]+}/images", server.getUserImagesByPage)
-
-	server.Router.Put("/user", server.updateUser)
-	server.Router.Delete("/user/{username:[a-zA-z0-9]+}", server.deleteUser)
 }
 
 func AllowOriginFunc(r *http.Request, origin string) bool {

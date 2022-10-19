@@ -13,7 +13,8 @@ import (
 	"strconv"
 	"testing"
 
-	"api/handlers")
+	"github.com/xceejay/rest-api-starter/handlers"
+)
 
 //nolint
 var svr handlers.Server
