@@ -1,4 +1,4 @@
-# Project Title
+# Simple RESTful API starter Kit
 
 Blazingly fast RESTful API starter in Golang for small to medium scale projects. 
 
