@@ -26,15 +26,6 @@ $ Start Coding...😃
 
 ```
 
-## Usage
-
-A few examples of useful commands and/or tasks.
-
-```
-$ First example
-$ Second example
-$ And keep this in mind
-```
 
 ## Deployment
 
