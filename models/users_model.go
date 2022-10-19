@@ -4,8 +4,7 @@ package models
 
 import (
 	"errors"
-	"net/http"
-	"strconv"
+
 
 	"gorm.io/gorm"
 )
@@ -31,7 +30,6 @@ type User struct {
 	FollowingCount int64    `gorm:"-" json:"followingCount"`
 	ListingsCount  int64    `gorm:"-" json:"listingsCount"`
 	ImageLinks     []string `gorm:"-" json:"imageLinks"`
-	Cart           Cart     //added cuz of foreign keys
 	// Dob            time.Time `json:"dob"`
 }
 

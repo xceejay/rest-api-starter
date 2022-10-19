@@ -4,9 +4,6 @@ import (
 	"errors"
 	"io"
 	"net/http"
-	"strconv"
-
-	"github.com/go-chi/chi"
 	"github.com/goccy/go-json"
 	"github.com/xceejay/rest-api-starter/models"
 	"gorm.io/gorm"
