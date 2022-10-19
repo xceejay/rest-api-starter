@@ -7,7 +7,7 @@ import (
 	"os"
 
 	"github.com/joho/godotenv"
-	"github.com/xceejay/rest-api-starter/api/handlers"
+	"api/handlers"
 )
 
 const (

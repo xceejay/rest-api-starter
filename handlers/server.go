@@ -61,17 +61,10 @@ func (server *Server) Run(addr string) {
 func (server *Server) initializeRoutes() {
 	server.Router.Post("/signin", server.signIn)
 	server.Router.Get("/users", server.getUsers)
-	server.Router.Get("/userssearch", server.getUsersWithSearch)
-	server.Router.Get("/listingssearch", server.getListingsWithSearch)
-	server.Router.Get("/listing/{listing_id:[a-zA-z0-9]+}", server.getListing)
-	server.Router.Get("/feed", server.getAllDefaultFeed)
-
-	server.Router.Get("/searchbyimage", server.searchByImage)
+	
 	server.Router.Get("/searchbyimage2", server.searchByImage2)
 	server.Router.Post("/user", server.createUser)
-	server.Router.Post("/addtocart/{listing_id:[a-zA-z0-9]+}", server.addToCart)
-	server.Router.Get("/cart/{user_id:[a-zA-z0-9]+}", server.getUserCart)
-	server.Router.Delete("/removefromcart/{listing_id:[a-zA-z0-9]+}", server.removeFromCart)
+
 
 	server.Router.Get("/user/{username:[a-zA-z0-9]+}", server.getUser)
 	server.Router.Get("/user/{username:[a-zA-z0-9]+}/images", server.getAllUserImages)
