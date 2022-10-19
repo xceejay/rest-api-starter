@@ -8,7 +8,7 @@ import (
 
 	"github.com/go-chi/chi"
 	"github.com/goccy/go-json"
-	"github.com/xceejay/social-network.new/api/models"
+	"github.com/xceejay/rest-api-starter/models"
 	"gorm.io/gorm"
 )
 
@@ -52,7 +52,7 @@ func (server *Server) signIn(w http.ResponseWriter, r *http.Request) {
 
 		if errors.Is(err, gorm.ErrRecordNotFound) {
 			respondWithError(w, http.StatusNotFound, "User not found")
-			// fmt.Println(err)
+			// fmt.Println(err)g
 		} else {
 			// fmt.Println(err)
 			respondWithError(w, http.StatusInternalServerError, err.Error())
