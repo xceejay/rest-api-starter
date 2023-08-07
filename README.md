@@ -22,7 +22,7 @@ A step by step guide that will tell you how to get the development environment u
 $ make
 $ make build
 $ ./autoreload.sh 
-$ Start Coding...😃
+$ done😃
 
 ```
 
